@@ -30,7 +30,10 @@
 .navbar+.jumbotron {
   margin-top: -20px;
 }
-
+.btn-primary {
+  background-color: #473198!important;
+  border-color: #2f2065!important;
+}
 .jumbotron .lang-logo {
   display: block;
   overflow: hidden;
