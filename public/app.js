@@ -276,7 +276,7 @@ $(document).ready(function() {
     }).done(function(download) {
       if (download === 'successful') {
         $('.files-downloaded')
-          .html('Download finished! Scroll up and see a grumpy cat!')
+          .html('Download finished! Scroll up to see the file!')
           .css('color', 'green');
 
         // Set grumpy pic
