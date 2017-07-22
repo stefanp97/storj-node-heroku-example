@@ -89,9 +89,9 @@ span.brand {
 }
 
 .grumpy-pic {
-  height: 300px;
-  width: 300px;
-  border: 1px solid black;
+  height: 700px;
+  width: 1000px;
+  border: 2px solid #473198;
 }
 
 .keypair {

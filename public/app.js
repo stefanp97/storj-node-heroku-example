@@ -279,7 +279,7 @@ $(document).ready(function() {
           .html('Download finished! Scroll up to see the file!')
           .css('color', 'green');
 
-        // Set grumpy pic
+
         $('.grumpy-pic').attr('src', './grumpy-dwnld.jpg')
       }
     }).error(function(err) {
