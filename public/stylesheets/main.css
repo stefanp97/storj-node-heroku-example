@@ -11,6 +11,8 @@ body {
   left: 50%;
   margin-bottom: 60px;
   font-family: 'Montserrat', sans-serif!important;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .hero p {
