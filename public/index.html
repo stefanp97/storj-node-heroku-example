@@ -1,176 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Bitshare | Alpha</title>
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="jumbotron text-center">
-            <a href="/" class="lang-logo">
-              <span  class="brand">Bitshare</span>
-            </a>
-            <h1>Welcome to the closed alpha of Bitshare</h1>
-            <p>Bitshare is a distributed file sharing platform, suitable for static content with video streaming coming soon. Right now you can try it by authenticating with our keys, creating a storage bucket and uploading a File.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
+<head>
+  <title>Bitshare | Alpha</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,900i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+</head>
+
+<body>
+  <!-- particles.js container -->
+  <div id="particles-js"></div>
+
+<div class="hero">
+<h1>Bitshare</h1>
+<p>Bitshare is a <strong>decentralized</strong> Filesharing solution. Your files are <strong>encrypted</strong> and spread across the blockchain which means that no one, including us, can spy on you.</p>
+<p id="soon">Launching soon</p>
+</div>
 
 
-    <div class="container storj-methods">
-      <div class="row grumpy-holder">
-        <img src="" alt="Your file will appear here"
-        class="grumpy-pic">
-      </div>
+  <!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
+  </script>
+  <!-- <script src="https://threejs.org/examples/js/libs/stats.min.js">
+  </script> -->
+  <script src="app.js"></script>
+</body>
 
-      <hr>
-
-      <!-- Basic Authentication -->
-      <h3>Basic Authentication</h3>
-      <div class="row credentials">
-        <div class="col-xs-4">
-          <span class="sub-list"></span>
-          <button class="credentials-btn--show btn btn-lg btn-primary">
-            Show Credentials
-          </button>
-        </div>
-        <div class="col-xs-8 credentials-result">
-          <div class="row credentials--username">
-
-          </div>
-          <div class="row credentials--password">
-
-          </div>
-        </div>
-      </div>
-      <div class="row authenticate">
-        <div class="col-xs-4">
-          <span class="sub-list"></span>
-          <button class="auth-btn btn btn-lg btn-primary">
-            Authenticate
-          </button>
-        </div>
-        <div class="col-xs-8 auth-result spacer">
-
-        </div>
-      </div>
-
-      <hr>
-
-      <!-- Key Pair -->
-      <h3>Key Pair</h3>
-      <div class="row">
-        <div class="col-xs-4">
-          <span class="sub-list"></span>
-          <button class="keypair-btn--generate btn btn-lg btn-primary">
-            Generate Key Pair
-          </button>
-        </div>
-        <div class="col-xs-8">
-          <div class="keypair-generated spacer"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-4">
-          <span class="sub-list"></span>
-          <button class="keypair-btn--retrieve btn btn-lg btn-primary">
-            Retrieve Key Pair
-          </button>
-        </div>
-        <div class="col-xs-8">
-          <div class="keypair-retrieved spacer">
-            <div class="col-xs-6 keypair-list">
-              <!-- "KEY_PAIR" -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-4">
-          <span class="sub-list"></span>
-          <button class="keypair-btn--authenticate btn btn-lg btn-primary">
-            Authenticate (KeyPair)
-          </button>
-        </div>
-        <div class="col-xs-8 keypair-authenticated spacer"></div>
-      </div>
-
-      <hr>
-
-      <!-- Buckets -->
-      <h3>Buckets</h3>
-      <div class="row bucket-create">
-        <div class="col-xs-4">
-          <span class="sub-list"></span>
-          <input class="new-bucket-name" type="text" placeholder="Enter bucket name" />
-          <button class="bucket-btn--create btn btn-lg btn-primary">
-            Create Bucket
-          </button>
-        </div>
-        <div class="col-xs-8 bucket-created">
-          <!-- BUCKET CREATED -->
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-4">
-          <span class="sub-list"></span>
-          <button class="bucket-btn--list btn btn-lg btn-primary">
-            List Buckets
-          </button>
-        </div>
-        <div class="col-xs-6 buckets-list spacer">
-          <!-- BUCKETS -->
-        </div>
-      </div>
-
-      <hr>
-
-      <!-- Files -->
-      <h3>Files</h3>
-      <div class="row">
-        <div class="col-xs-4 files__upload">
-          <span class="sub-list"></span>
-          <button class="files-btn--upload btn btn-lg btn-primary">
-            Upload a File
-          </button>
-        </div>
-        <div class="col-xs-8 files-upload spacer">
-          <!-- FILE TO UPLOAD -->
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-4">
-          <span class="sub-list"></span>
-          <button class="files-btn--list btn btn-lg btn-primary">
-            List Files in Buckets
-          </button>
-        </div>
-        <div class="col-xs-8 files-list spacer">
-          <!-- FILES -->
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-4">
-          <span class="sub-list"></span>
-          <button class="files-btn--download btn btn-lg btn-primary">
-            Download Files
-          </button>
-        </div>
-        <div class="col-xs-8 files-downloaded spacer">
-          <!-- "DOWNLOADED FILE FROM BUCKET" -->
-        </div>
-      </div>
-    <!-- tutorial end -->
-    <hr>
-
-    <script src="app.js"></script>
-  </body>
 </html>
